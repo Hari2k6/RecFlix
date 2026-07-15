@@ -85,19 +85,36 @@ Finally, the engine computes **Cosine Similarity** between the user's preference
 
 ## How to Setup Your Private TMDB API Key
 
-To display movie posters on the screen, this application pulls imagery directly from The Movie Database (TMDB).
+To display movie posters, this application fetches images directly from **The Movie Database (TMDB)**.
 
-### 1. Get Your Free Key
-1. Go to [The Movie Database (TMDB)](https://www.themoviedb.org/) and create a free account.
-2. Click on your profile icon in the top right, go to **Settings**, and select **API** from the left sidebar.
-3. Click **Create** to request a Developer API Key (fill out the quick application form).
-4. Copy your **API Key (v3 auth)**.
+### 1. Get Your Free API Key
 
-### 2. Secure Your Key in the Code
-Open `frontend/src/App.jsx` and find line 3 at the very top of the file:
+1. Visit **https://www.themoviedb.org/** and create a free account.
+2. Click your profile icon → **Settings**.
+3. Open the **API** section.
+4. Request a **Developer API Key (v3 auth)**.
+5. Copy your generated API Key.
+
+### 2. Add the API Key
+
+Open:
+
+```text
+frontend/src/App.jsx
+```
+
+Locate the following line:
+
 ```javascript
-const TMDB_API_KEY = 'YOUR_TMDB_API_KEY_HERE';
-Replace 'YOUR_TMDB_API_KEY_HERE' with your actual copied key.
+const TMDB_API_KEY = "YOUR_TMDB_API_KEY_HERE";
+```
+
+Replace it with your own API key:
+
+```javascript
+const TMDB_API_KEY = "YOUR_ACTUAL_TMDB_API_KEY";
+```
+
 ---
 
 ---
