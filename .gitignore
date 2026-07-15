@@ -1,0 +1,16 @@
+```text
+# Ignore python virtual environments
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Ignore massive database files
+*.db
+*.sqlite3
+backend/recflix.db
+
+# Ignore node module caches
+node_modules/
+dist/
+.env
